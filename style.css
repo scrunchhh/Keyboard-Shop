@@ -1,3 +1,5 @@
+/* BASIC LAYOUT RULES */
+
 * {
     color: #f5f5f5;
 }
@@ -9,7 +11,6 @@ body {
 .body2 {
     margin: 0px -15px;
     border: solid 2px pink;
-    background-color: pink;
 }
 
 .section1,
@@ -18,13 +19,49 @@ body {
     margin: 20px 10vw;
 }
 
+/* HEADER */
+
 .header {
     border: 2px solid red;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     min-height: 3vh;
     margin: 0px 10vw;
+    font-family: 'Cabin', sans-serif;
+    font-size: 18px;
+}
+
+.middle {
+    display: flex;
+    /* border: 2px red solid; */
+    max-width: 25vw;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.middle a,
+.right a {
+    display: flex;
+    flex: 1 0 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    /* border: 2px red solid; */
+    max-width: 16vw;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.header .signUp {
+    color: #16161d;
+    background: #f5f5f5;
 }
 
 ul {
@@ -32,18 +69,18 @@ ul {
 }
 
 a {
+    padding: 7px;
     border: 2px red solid;
     text-decoration: none;
 }
 
-.logo {
-    
+.logo img{
+    display: flex;
+    height: 75px;
+    /* border: solid red 2px; */
 }
 
-.logo img{
-    height: 75px;
-    border: solid red 2px;
-}
+/* FOOTER */
 
 .footer {
     border: 2px solid red;
@@ -51,6 +88,8 @@ a {
     min-height: 3vh;
     margin: 0px 10vw;
 }
+
+/* BODY */
 
 .page1,
 .page2,
