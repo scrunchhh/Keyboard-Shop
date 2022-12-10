@@ -10,7 +10,9 @@ body {
 
 .body2 {
     margin: 0px -15px;
-    border: solid 2px pink;
+    /* border: solid 2px pink; */
+    background-image: url("images/filledSquares.png");
+    background-size: cover;
 }
 
 .section1,
@@ -103,16 +105,13 @@ a {
 }
 
 
-.frontChild {
+.pageBlock {
+    display: flex;
+    flex-direction: column;
     width: 600px;
     height: 600px;
     flex: 0 1 auto;
     margin: 20px;
+    border: solid red 2px;
 }
 
-.frontChild {
-        width: 600px;
-        height: 600px;
-        flex: 0 1 auto;
-        margin: 20px;
-}
